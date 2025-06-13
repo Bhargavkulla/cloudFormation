@@ -14,7 +14,7 @@ Resources:
       CidrBlock: !Ref VPCCidr
       Tags:
         - Key: Name
-          Value: !Sub "Stack-VPC-${AWS::Region}"
+          Value: !Sub "Stackset-VPC-${AWS::Region}"
  
   PublicSubnet1:
     Type: AWS::EC2::Subnet
@@ -58,7 +58,7 @@ Resources:
       MapPublicIpOnLaunch: false
       Tags:
         - Key: Name
-          Value: "PrivateSubnet12"
+          Value: "PrivateSubnet2"
           
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
