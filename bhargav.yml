@@ -58,7 +58,7 @@ Resources:
       MapPublicIpOnLaunch: false
       Tags:
         - Key: Name
-          Value: "PrivateSubnet2"
+          Value: "PrivateSubnet12"
           
   MySecurityGroup:
     Type: AWS::EC2::SecurityGroup
